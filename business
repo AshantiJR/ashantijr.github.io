@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Page Structure</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            background-color: #1D2D50;
+            color: #fff;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 1rem;
+            text-align: center;
+        }
+    
+        nav a:hover {
+            color: #000;
+            background-color: #fff;
+            border-radius: 0.5rem;
+            padding: 0.2rem 0.5rem;
+        }
+        .nav-link:visited {
+            color: red;
+        }
+        table {
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 0.5rem 1rem rgba(255, 85, 0, 0.5);
+            margin-bottom: 2rem;
+            padding: 1rem;
+            width: 45%;
+        }
+        .box {
+            border: 4px groove black;
+            padding: 10px;
+            margin-bottom: 150px;
+        }
+        .topic {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        button {
+            background-color: #1D2D50;
+            border: none;
+            border-radius: 50%;
+            color: #FCDAB7;
+            cursor: pointer;
+            font-size: 16px;
+            height: 40px;
+            margin-top: 20px;
+            outline: none;
+            width: 40px;
+        }
+        button:hover {
+            background-color: #FCDAB7;
+            color: #1D2D50;
+        }
+        
+        .box2 {
+				background-color: #FCDAB7;
+				border-radius: 10px;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+				padding: 20px;
+				text-align: center;
+				position: absolute;
+				top: 50%;
+				right: 25%;
+				transform: translate(50%, -50%);
+				width: 300px;
+			}
+		</style>
+    </head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const navLinks = document.querySelectorAll('.nav-link');
+          navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+              navLinks.forEach(navLink => {
+                navLink.classList.remove('visited');
+              });
+                 link.classList.add('visited');
+            });
+          });
+        });
+    </script>
+
+    <body>
+
+        <header>
+            <h1>Businesses!</h1>
+        </header>
+<nav>
+    <a href="index.html" class="nav-link">Home</a>|<a href="about.html" class="nav-link">About Us</a>|<a href="Businesses.html" class="nav-link">Businesses</a> |<a href="contact.html" class="nav-link">Contact Us</a> 
+
+</nav>
+
+<main>
+    <title>Boxed Paragraphs</title>
+	<style>
+        .box {
+            border: 4px groove black;
+            padding: 10px;
+            margin-bottom: 150px;
+            height: 1000px;
+            width: 1650px; 
+        }
+    </style>
+</head>
+<body>
+	<div class="box">
+		<H1>Crafts with Soul</H1>
+        
+        <div id="pictures"style="float: right; margin-right: 10px;"><img src="images/keychain.PNG" alt="keychain" width="250px" height="275px"></a></div>
+        <p>Introducing 'Crafts with Soul,' a thriving small Black-owned business that creates beautifully handcrafted, personalized crafts. With a deep passion for creativity and a commitment to quality, Crafts with Soul offers a range of custom-made items that are tailored to capture the essence of each customer. From engraved wooden keepsakes to intricately designed jewelry, their crafts are meticulously crafted with attention to detail and a touch of soul. Through their work, Crafts with Soul aims to bring joy, meaning, and a personal touch to every occasion, creating cherished mementos that last a lifetime.</p>
+        
+        <div id="pictures"style="float: left; margin-right: 10px;"><img src="images/back_support_pillow.jpg" alt="Small Crafts" width="250px" height="275px"></a></div>
+        <p>At Crafts with Soul, the emphasis on personalized experiences sets them apart. Each customer is treated with care and respect, working closely with the skilled artisans to bring their vision to life. The business takes pride in their ability to translate emotions and stories into tangible, one-of-a-kind creations. Whether it's a heartfelt gift for a loved one or a special piece of decor to commemorate a milestone, Crafts with Soul puts their heart and soul into every personalized craft they produce.</p>
+
+        <p>Crafts with Soul not only excels in craftsmanship but also in their commitment to social impact. As a small Black-owned business, they actively promote diversity, equity, and inclusion within their operations. They actively collaborate with local artists, fostering a supportive ecosystem that celebrates talent from all backgrounds. Crafts with Soul also prioritizes fair wages and ethical practices, ensuring that their products are not only beautiful but also carry the values of integrity and empowerment. By choosing Crafts with Soul, customers not only receive a personalized and meaningful craft but also contribute to a greater cause.</p>
+        
+        <div id="pictures"style="float: right; margin-right: 10px;"><img src="images/infant_clothes.jpg" alt="Small Crafts" width="250px" height="275px"></a></div>
+        <p>Crafts with Soul takes great pride in preserving and celebrating African heritage through their craft creations. Drawing inspiration from rich cultural traditions, their personalized crafts often incorporate African motifs, patterns, and symbols, adding a unique and soulful touch to each piece. By infusing their crafts with a sense of cultural identity, Crafts with Soul aims to promote representation and appreciation for African artistry, allowing customers to connect with their roots and carry a piece of their heritage in their everyday lives.
+
+            In addition to their exquisite personalized crafts, Crafts with Soul also actively engages with their community. They frequently participate in local events, craft fairs, and workshops, where they share their expertise and passion for personalized crafts with others. Through these interactions, they inspire creativity, encourage entrepreneurship, and foster a sense of pride within the community. Crafts with Soul firmly believes in the power of personalized crafts to bring people together, tell unique stories, and create lasting memories that transcend generations.</p>    
+           <p>Inspiring creativity, celebrating cultural heritage, and leaving a lasting impact, Crafts with Soul has established itself as a beacon of personalized craftsmanship. With their unwavering dedication to quality, attention to detail, and commitment to social impact, they have garnered a loyal customer base that appreciates the beauty and meaning behind their personalized crafts. By choosing Crafts with Soul, customers not only receive a meticulously crafted piece of art but also contribute to supporting a small Black-owned business and promoting inclusivity within the crafting industry. Crafts with Soul invites you to embark on a personalized journey of self-expression, storytelling, and soulful craftsmanship, where every creation is an ode to individuality and heartfelt connections.</p>
+        <p>As Crafts with Soul continues to grow and thrive, they remain steadfast in their mission to touch hearts, uplift communities, and inspire a sense of pride in owning personalized crafts. With a commitment to exceptional customer service and a passion for creating meaningful connections, Crafts with Soul looks forward to expanding their reach and touching the lives of even more individuals. Whether it's a special gift for a loved one or a personal keepsake to treasure, Crafts with Soul invites you to discover the beauty of personalized crafts and join them on a journey of artistry, culture, and soulful expression. Experience the magic of Crafts with Soul, where every creation is a testament to the power of craft and the human spirit.</p>
+    </div>
+	<div class="box">
+		<H1>Business 2</H1>
+        <p>COMING SOON</p> </div>
+
+</main>
+<footer>
+    &copy; <a href="mailto:aretana1@egcc.edu">2023 Ashanti Retana aretana1@egcc.edu</a>
+    
+</footer>
+    </body>
+</html>
