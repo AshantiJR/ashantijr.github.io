@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Page Structure</title>
+        <link rel="stylesheet" href="Style.css">
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Reaching Retana</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a:hover {
+            color: #130661;
+            background-color: #fff;
+            border-radius: 0.5rem;
+            padding: 0.2rem 0.5rem;
+        }
+        .nav-link:visited {
+            color: red;
+        }
+
+        #lists {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem;
+        }
+        dl {
+            margin: 0;
+        }
+        dt {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        dd {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 0;
+            text-align: justify;
+        }
+        table {
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 0.5rem 1rem rgba(255, 85, 0, 0.5);
+            margin-bottom: 2rem;
+            padding: 1rem;
+            width: 45%;
+        }
+        th {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        td {
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        li:before {
+            background-color: #1D2D50;
+            border-radius: 50%;
+            content: '';
+            height: 0.5rem;
+            left: 0;
+            position: absolute;
+            top: 0.7rem;
+            width: 0.5rem;
+        }
+        footer {
+            background-color: #1D2D50;
+            color: #fff;
+            font-size: 0.9rem;
+            padding: 0.5rem;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            navLinks.forEach(navLink => {
+              navLink.classList.remove('visited');
+            });
+               link.classList.add('visited');
+          });
+        });
+      });
+  </script>
+    
+        <header>
+            <h1>Reaching Retana!</h1>
+        </header>
+<nav>
+    <a href="index.html" class="nav-link">Home</a>|<a href="about.html" class="nav-link">About Us</a>|<a href="Businesses.html" class="nav-link">Businesses</a> |<a href="contact.html" class="nav-link">Contact Us</a> 
+        
+</nav>
+<main>
+    
+        <div id="lists">
+
+             <dl>
+                <dd>Welcome to our page dedicated to showcasing legal small businesses! Here you will find a variety of small businesses that have all obtained the necessary permits and licenses to operate legally. We believe that small businesses are the backbone of our economy and deserve to be recognized for their hard work and dedication. By featuring these businesses, we hope to not only support their growth but also promote the importance of shopping small. Whether you are looking for a unique gift or searching for a local service provider, we hope you will find what you are looking for on our page. Thank you for supporting small businesses!</dd>
+                    
+                <dt><strong>What this site aims to do</strong></dt>
+                <dd>At Reaching Retana, we are passionate about supporting small businesses. We believe that small businesses are the backbone of the economy and that they play a critical role in building vibrant communities. Our mission is to showcase and promote the amazing work that small businesses do every day, and to help them thrive by providing them with the tools, resources, and support they need to succeed.
+
+                    We understand the challenges that small businesses face, from limited financial resources to intense competition from larger corporations. That's why we are committed to providing affordable and effective marketing and promotional solutions that help small businesses stand out in a crowded market. Whether it's through social media, email marketing, or other advertising channels, we work closely with small business owners to create customized campaigns that are tailored to their unique needs and goals.
+                    
+                    At Reaching Retana, we are dedicated to helping small businesses succeed. We believe that when small businesses thrive, communities thrive, and that's a win-win for everyone. Join us in supporting small businesses and help us build a stronger, more vibrant economy that works for everyone.</dd>
+             </dl>   
+        </div>
+        <div style="width: 800px; margin: 0 auto; text-align: center;">
+            <table style="border: 1px dashed navy; width: 100%; display: inline-block;">
+                <thead>
+                    <tr>
+                      <th style="width: 50%;">Challenges Faced by Small Businesses</th>
+                      <th style="width: 50%;">Solutions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td style="vertical-align: top;">
+                        <ul>
+                          <li>Limited financial resources. They often have limited access to capital and are unable to secure loans or investment funding.</li>
+                          <li>Limited staff and expertise. For small businesses, it can be challenging to hire and retain employees with the necessary skills and expertise to help the business grow.</li>
+                          <li>Intense competition from larger businesses. Larger businesses often have more resources, such as financial, technological, and marketing resources, and may be able to offer similar products or services at a lower price point due to economies of scale.</li>
+                          <li>Limited access to capital or funding. One of the major challenges faced by small businesses is limited access to capital or funding.</li>
+                          <li>Difficulty in attracting and retaining top talent. Small businesses may find it challenging to attract and retain top talent due to a variety of factors.</li>
+                          <li>High risk of failure, and the risk of failure is high, particularly in the early stages. Many new businesses fail within the first few years of operation due to various factors</li>
+                          <li>Limited scalability and potential for growth can be a major challenge for small businesses. Scaling up a business is crucial for achieving long-term success, but small businesses often struggle to do so due to a variety of factors.</li>
+                          <li>Difficulty in competing with larger businesses in terms of pricing, marketing, and distribution.Larger businesses often have the advantage of economies of scale, which allows them to produce goods or services at a lower cost per unit.</li>
+                          <li>Limited access to resources such as technology, research, and development. Technology is constantly evolving, and businesses that lack access to the latest technologies may struggle to remain competitive.</li>
+                          <li>Regulatory compliance and legal challenges. Regulatory compliance refers to the laws and regulations that a company must comply with in order to operate within the legal framework of the country or region where it operates.</li>
+                          <li>Limited bargaining power with suppliers and vendors when it comes to negotiating with its suppliers and vendors. In other words, the business is at a disadvantage when it comes to setting terms and prices for the goods and services.</li>
+                        </ul>
+                      </td>
+                      <td style="vertical-align: top;">
+                        <ul>
+                          <li>Explore alternative funding sources, such as loans, grants, or crowdfunding. Reduce costs by outsourcing or utilizing technology. Create a budget: Creating and sticking to a budget is essential for small businesses. </li>
+                          <li>Focus on hiring versatile employees, outsourcing tasks, and offering training and professional development opportunities.Cross-training: Another solution is to cross-train employees so that they can perform multiple functions.</li>
+                          <li>Develop a unique value proposition, focus on niche markets, and build strong relationships with customers.Focus on a niche market: Identify a specific customer segment that the larger businesses may be overlooking or underserving.</li>
+                          <li>Research alternative funding sources, create a solid business plan, and establish relationships with lenders or investors.Seek out alternative sources of funding: Traditional bank loans may not be an option for small businesses with limited credit history or collateral.</li>
+                          <li>Offer competitive compensation, benefits, and a positive work environment. Focus on employee development and recognition.</li>
+                          <li>Create a solid business plan, focus on customer needs, and continually monitor and adapt to changes in the market.</li>
+                          <li>Explore partnerships and collaborations, focus on innovation and product development, and establish efficient processes. Expand into new markets: Small businesses can expand their customer base by exploring new markets.</li>
+                          <li>Develop a unique value proposition, focus on niche markets, and build strong relationships with customers. Focus on a specific niche: Concentrate on serving a particular market segment that larger businesses might overlook or neglect.</li>
+                          <li>Explore alternative resources, such as partnerships, outsourcing, or collaborative efforts. Focus on leveraging existing resources effectively.</li>
+                          <li>Stay up-to-date with regulations, seek legal advice when necessary, and establish effective compliance processes and procedures.</li>
+                          <li>Focus on building strong relationships with suppliers and vendors, negotiating effectively, and exploring alternative sources.</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+</main>
+
+<footer>
+    
+&copy; <a href="mailto:aretana1@egcc.edu">2023 Ashanti Retana aretana1@egcc.edu</a>
+
+</footer>
+    </body>
+</html>
