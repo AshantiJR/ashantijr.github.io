@@ -1,0 +1,177 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>About Us</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .bio {
+			display: none;
+		}
+		.bio.active {
+			display: block;
+		}
+            body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a:hover {
+            color: #000;
+            background-color: #fff;
+            border-radius: 0.5rem;
+            padding: 0.2rem 0.5rem;
+        }
+        .nav-link:visited {
+            color: red;
+        }
+        
+        #lists {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem;
+        }
+        dl {
+            margin: 0;
+        }
+        dt {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        dd {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 0;
+            text-align: justify;
+        }
+        table {
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 0.5rem 1rem rgba(255, 85, 0, 0.5);
+            margin-bottom: 2rem;
+            padding: 1rem;
+            width: 45%;
+        }
+        th {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        td {
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        li:before {
+            background-color: #1D2D50;
+            border-radius: 50%;
+            content: '';
+            height: 0.5rem;
+            left: 0;
+            position: absolute;
+            top: 0.7rem;
+            width: 0.5rem;
+        }
+        footer {
+            background-color: #1D2D50;
+            color: #fff;
+            font-size: 0.9rem;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const navLinks = document.querySelectorAll('.nav-link');
+          navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+              navLinks.forEach(navLink => {
+                navLink.classList.remove('visited');
+              });
+                 link.classList.add('visited');
+            });
+          });
+        });
+    </script>
+
+    <body>
+
+        <header>
+            <h1>About Us!</h1>
+        </header>
+
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>|<a href="about.html" class="nav-link">About Us</a>|<a href="Businesses.html" class="nav-link">Businesses</a> |<a href="contact.html" class="nav-link">Contact Us</a> 
+                
+        </nav>
+        <div class="content">
+            <p>Introducing 'Reaching Retana,' a passionate small business dedicated to showcasing other remarkable small businesses. Through our dynamic and user-friendly website, Reaching Retana provides a platform for local entrepreneurs to shine and share their unique products and services with a broader audience. We are committed to fostering community and support, Reaching Retana empowers customers to explore and connect with exceptional local and cross country establishments. Through compelling profiles, captivating narratives, and visually stunning content, Reaching Retana celebrates the creativity, dedication, and innovation of small businesses, encouraging consumers to embrace the power of shopping local and experiencing the authentic charm of their communities.</p>
+        </div>
+        <h2>Our Team</h2>
+
+	<ul>
+		<li><a href="#" onclick="showBio('bio1')">Summer Smith</a></li>
+		<li><a href="#" onclick="showBio('bio2')">Morty Smith</a></li>
+		<li><a href="#" onclick="showBio('bio3')">Rick Sanchez</a></li>
+        <li><a href="#" onclick="showBio('bio4')">Beth Smith</a></li>
+        <li><a href="#" onclick="showBio('bio5')">Jerry</a></li>
+	</ul>
+
+	<div id="bio1" class="bio active">
+		<h3>Summer Smith</h3>
+		<p>Summer is a front-end developer with 5 years of experience. He specializes in creating responsive and user-friendly web applications using HTML, CSS, and JavaScript.</p>
+	</div>
+
+	<div id="bio2" class="bio">
+		<h3>Morty Smith</h3>
+		<p>Morty is a back-end developer with 3 years of experience. She specializes in creating robust and scalable web applications using Node.js, Express, and MongoDB.</p>
+	</div>
+
+	<div id="bio3" class="bio">
+		<h3>Rick Sanchez</h3>
+		<p>Rick is a senior software engineer with decades of experience. He has a no-nonsense attitude and is not afraid to take risks in pursuit of innovation. His expertise in cutting-edge technologies has been invaluable to our team.</p>
+	</div>
+
+	<div id="bio4" class="bio">
+		<h3>Beth Smith</h3>
+		<p>Beth is a data analyst with a knack for spotting patterns and trends. She uses her skills to analyze user behavior and provide valuable insights for our development team.</p>
+	</div>
+
+    <div id="bio5" class="bio">
+		<h3>Jerry</h3>
+		<p>Jerry is a QA tester with a keen eye for detail. He is a stickler for protocol and is always on the lookout for ways to improve the quality of our applications.</p>
+	</div>
+
+	<script>
+		function showBio(bioId) {
+			let bios = document.getElementsByClassName("bio");
+			for (let i = 0; i < bios.length; i++) {
+				bios[i].classList.remove("active");
+			}
+			let bioToShow = document.getElementById(bioId);
+			bioToShow.classList.add("active");
+		}
+	</script>
+
+        <footer>
+            &copy; <a href="mailto:aretana1@egcc.edu">2023 Ashanti Retana aretana1@egcc.edu</a>
+        </footer>
+    </body>
+</html>
