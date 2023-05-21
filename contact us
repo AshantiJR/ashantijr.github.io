@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Page Structure</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+<nav>
+    <a href="index.html" class="nav-link">Home</a>|<a href="about.html" class="nav-link">About Us</a>|<a href="Businesses.html" class="nav-link">Businesses</a> |<a href="contact.html" >Contact Us</a> 
+        
+</nav>   
+
+<main>
+    <style>
+		header {
+            background-color: #1D2D50;
+            color: #FCDAB7;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        nav a:hover {
+            color: #000;
+            background-color: #fff;
+            border-radius: 0.5rem;
+            padding: 0.2rem 0.5rem;
+        }
+		.nav-link:visited {
+            color: red;
+        }
+
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid black;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid gray;
+			border-radius: 4px;
+		}
+
+		input[type="text"],
+    	input[type="tel"],
+    	select,
+    	textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    	}
+
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #77a045;
+		}
+		
+	</style>
+</head>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('.nav-link');
+      navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.forEach(navLink => {
+            navLink.classList.remove('visited');
+          });
+             link.classList.add('visited');
+        });
+      });
+    });
+</script>
+<body>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+
+		<input type="submit" value="Submit">
+	</form>
+	<head>
+		<body>
+			<h1>Satisfaction Survey</h1>
+			<form action="process-survey.php" method="post">
+			  <label for="name">Name:</label>
+			  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+		  
+			  <label for="email">Email:</label>
+			  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+		  
+			  <label for="phone">Phone Number:</label>
+			  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+				
+			  <label for="genre">How did you hear about us?:</label>
+			  <select id="genre" name="genre">
+				<option value="action">*None*</option>
+				<option value="action">Friend</option>
+				<option value="comedy">Family</option>
+				<option value="drama">Direct Search</option>
+				<option value="horror">Ads</option>
+			  </select>
+
+			  <fieldset>
+				<legend>How satisfied are you with our services?</legend>
+				<label>
+				  <input type="radio" name="satisfaction" value="very-satisfied">
+				  Very Satisfied
+				</label>
+				<label>
+				  <input type="radio" name="satisfaction" value="satisfied">
+				  Satisfied
+				</label>
+				<label>
+				  <input type="radio" name="satisfaction" value="neutral">
+				  Neutral
+				</label>
+				<label>
+				  <input type="radio" name="satisfaction" value="dissatisfied">
+				  Dissatisfied
+				</label>
+				<label>
+				  <input type="radio" name="satisfaction" value="very-dissatisfied">
+				  Very Dissatisfied
+				</label>
+			  </fieldset>
+
+			  <legend>Message:</legend>
+				<textarea id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+		  
+			  <label for="comments">Please provide any comments or suggestions:</label>
+			  <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+		  
+			  <input type="submit" value="Submit">
+			</form>
+</main>
+<footer>
+    &copy; <a href="mailto:aretana1@egcc.edu">2023 Ashanti Retana aretana1@egcc.edu</a>
+    
+</footer>
+    </body>
+</html>
